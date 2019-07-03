@@ -1,13 +1,5 @@
-import {Observable, of, merge, from} from 'rxjs';
-import {
-  switchMap,
-  map,
-  filter,
-  mergeMap,
-  catchError,
-  withLatestFrom,
-  combineLatest,
-} from 'rxjs/operators';
+import {Observable, of} from 'rxjs';
+import {switchMap, map, catchError, withLatestFrom} from 'rxjs/operators';
 import {ofType, Epic, StateObservable} from 'redux-observable';
 import {
   Actions,
